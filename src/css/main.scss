@@ -72,6 +72,11 @@
     text-align: center;
     margin-top: 70px;
     border-radius: 14px;
+
+    @media screen and (max-width: 480px) {
+        max-width: 360px;
+        margin: auto;
+    }
 }
 
 .homepage-info h3 {

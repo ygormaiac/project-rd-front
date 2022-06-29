@@ -94,6 +94,13 @@
   border-radius: 14px;
 }
 
+@media screen and (max-width: 480px) {
+  .homepage-info {
+    max-width: 360px;
+    margin: auto;
+  }
+}
+
 .homepage-info h3 {
   font-size: 14px;
 }
