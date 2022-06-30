@@ -8,6 +8,8 @@ Projeto desenvolvido para processo seletivo na [RD Station](https://rdstation.co
 
 Criação de um frontend em que irá se comunicar com a API também elaborada por mim, para apresentar informações sobre lançamentos. E para finalizar, deve-se criar um teste A/B simples (pode ser uma mudança de cor na página ou na variante A aparecer uma imagem e na variante B não aparecer) com a ferramenta Google Optimize (ou na que você se sentir mais confortável).
 
+![Homepage](assets/homepage.png)
+
 :globe_with_meridians: Demonstração [Aqui](https://rdstation-test.netlify.app/)
 
 ## :scroll: Regras do negócio:
@@ -52,13 +54,24 @@ Foi utilizado o **Google Optimize** para criação de teste A/B. Foram desenvolv
 - Mudança do background dos principais itens da homepage, como **barra de navegação** e **botão** para cores mais quentes.
 Adicionei uma proporção de 80% (para a página original) e 20% para a página B. Essa é a porcentagem em que ambas as páginas serão mostradas para as pessoas que visitarão o site. 
 
+![Teste Google Optimize](assets/optimize-test.png)
+
 **Uma métrica possível de ser avaliada nesse caso é o tempo de permanência na página, em qual das duas variantes o usuário permanece por mais tempo. Se houvesse inscrição em alguma newsletter ou venda de serviços, poderíamos verificar a métrica de conversão e avaliar qual das variáveis teve a maior conversão.**
 
 A aplicações consistem da tela inicial, onde criei uma `Homepage` simulando um site de informações sobre lançamentos de foguetes e naves espaciais. Todas as outras páginas mostram especificamente os dados de lançamento vistos de acordo com a escolha do usuário na barra de navegação. Essas páginas são alimentadas pela API que criei para esse projeto. Para o controle dessas rotas, utilizo o `react-router-dom`.
 
 Adicionei também O **Hotjar** na página, que é uma ferramenta utilizada para criar registros do comportamento do visitante no seu site. Tendo o conhecimento desses dados, a empresa pode encontrar melhores oportunidades de interação no site.
 
+![Hotjar Integration](assets/hotjar-integration.png)
+
+![Hotjar recording](assets/hotjar-recordings.png)
+
 **O Google Optimize, Hotjar e Google Analytics foram integrados na página por meio do assistente de Tags do Google: Google Tag Manager**.
+
+![Google Tag Manager](assets/tag-manager.png)
+
+![Google Analytics](assets/analytics-overview.png)
+
 
 Extensões utilizadas que auxiliam no desenvolvimento:
 
