@@ -3,8 +3,8 @@ import { useState, useEffect } from 'react';
 
 export default function useFetchApi() {
     const [launchesAll, setLaunchesAll] = useState([]);
-    const [lastestLaunches, setLastestLaunches] = useState([]);
-    const [nextLaunches, setNextLaunches] = useState([]);
+    const [lastestLaunches, setLastestLaunches] = useState();
+    const [nextLaunches, setNextLaunches] = useState();
     const [upComingLaunches, setUpComingLaunches] = useState([]);
     const [pastLaunches, setPastLaunches] = useState([]);
 

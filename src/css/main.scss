@@ -123,6 +123,11 @@ a {
     gap: 30px;
 }
 
+.launches-list-next-last {
+    max-width: 300px;
+    margin: auto;
+}
+
 .launch-card {
     background-color: #eee;
     border-radius: 10px;
@@ -146,4 +151,21 @@ a {
 
 span {
     font-size: 12px;
+}
+
+.c-loader {
+    animation: is-rotating 1s infinite;
+    border: 6px solid #e5e5e5;
+    border-radius: 50%;
+    border-top-color: #51d4db;
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    margin-top: 100px;
+
+    @keyframes is-rotating {
+        to {
+            transform: rotate(1turn);
+        }
+    }
 }

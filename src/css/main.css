@@ -147,6 +147,11 @@ a {
   gap: 30px;
 }
 
+.launches-list-next-last {
+  max-width: 300px;
+  margin: auto;
+}
+
 .launch-card {
   background-color: #eee;
   border-radius: 10px;
@@ -175,5 +180,31 @@ a {
 
 span {
   font-size: 12px;
+}
+
+.c-loader {
+  -webkit-animation: is-rotating 1s infinite;
+          animation: is-rotating 1s infinite;
+  border: 6px solid #e5e5e5;
+  border-radius: 50%;
+  border-top-color: #51d4db;
+  height: 100px;
+  width: 100px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+@-webkit-keyframes is-rotating {
+  to {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+  }
+}
+
+@keyframes is-rotating {
+  to {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+  }
 }
 /*# sourceMappingURL=main.css.map */

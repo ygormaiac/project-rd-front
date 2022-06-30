@@ -24,4 +24,11 @@ describe('Testando a homepage', () => {
     });
     expect(titleH3).toBeInTheDocument();
   });
+  test('Verifica se existe um link com o texto "Todos os lançamentos"', () => {
+    render(<Homepage />);
+    const linkAll = screen.getByRole('link', {
+      name: /Todos os lançamentos/i,
+    });
+    expect(linkAll).toBeInTheDocument();
+  })
 });
