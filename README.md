@@ -1,70 +1,78 @@
-# Getting Started with Create React App
+# RD Station Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Projeto desenvolvido para processo seletivo na [RD Station](https://rdstation.com) para a vaga de **Engenheiro de Software FullStack | Growth Engineering**
 
-## Available Scripts
+<img height="120px" width="140px" align="right" src="https://leadsbridge.com/wp-content/themes/leadsbridge/img/integration-lg-logos/logo1143.png" />
 
-In the project directory, you can run:
+## :bookmark_tabs: Sobre o projeto:
 
-### `npm start`
+Criação de um frontend em que irá se comunicar com a API também elaborada por mim, para apresentar informações sobre lançamentos. E para finalizar, deve-se criar um teste A/B simples (pode ser uma mudança de cor na página ou na variante A aparecer uma imagem e na variante B não aparecer) com a ferramenta Google Optimize (ou na que você se sentir mais confortável).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+:globe_with_meridians: Demonstração [Aqui](https://rdstation-test.netlify.app/)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## :scroll: Regras do negócio:
 
-### `npm test`
+O Desafio Técnico consiste em criar uma aplicação web que realiza o consumo de uma API elaborada com base na API da SpaceX, onde é possível ver os dados de lançamentos de foguetes.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Requerimentos técnicos:
+- :white_check_mark: Mantenha o código no Github
+- :white_check_mark: Criar um teste A/B com a ferramenta Google Optimize
 
-### `npm run build`
+Frontend:
+- :white_check_mark: React
+- :white_check_mark: Consumir a API
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Extra:
+- :white_check_mark: Integrar o script (snippet) do Hotjar no site criado
+- :white_check_mark: Integração do Google Optimize, Hotjar e Google Analytics na página através do **Google Tag Manager**
+- :white_check_mark: Fazer o deploy no Heroku ou similares (Fiz o meu deploy na Netlify)
+- :white_check_mark: Implementação de testes unitários
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## :open_book: Informações
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### :rocket: Execução
 
-### `npm run eject`
+`npm start`
+> Iniciar aplicação através do App.js.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+`npm run dev`
+> Para rodar o projeto localmente, nele antes é inicializado o server no arquivo app, e logo em seguida o servidor referente ao ambiente de desenvolvimento.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+`npm run build`
+> Compila o código em desenvolvimento para ser servido na pasta public
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+#### 📓 Soluções adotadas e informações
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Utilizei **React** para o desenvolvimento da aplicação web.
 
-## Learn More
+Utilizei **React Router** para o desenvolvimento das rotas que foram utilizadas para criar as pages no frontend.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Foi utilizado o **Google Optimize** para criação de teste A/B. Foram desenvolvidos os seguintes testes:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Mudança do background dos principais itens da homepage, como **barra de navegação** e **botão** para cores mais quentes.
+Adicionei uma proporção de 80% (para a página original) e 20% para a página B. Essa é a porcentagem em que ambas as páginas serão mostradas para as pessoas que visitarão o site. 
 
-### Code Splitting
+**Uma métrica possível de ser avaliada nesse caso é o tempo de permanência na página, em qual das duas variantes o usuário permanece por mais tempo. Se houvesse inscrição em alguma newsletter ou venda de serviços, poderíamos verificar a métrica de conversão e avaliar qual das variáveis teve a maior conversão.**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+A aplicações consistem da tela inicial, onde criei uma `Homepage` simulando um site de informações sobre lançamentos de foguetes e naves espaciais. Todas as outras páginas mostram especificamente os dados de lançamento vistos de acordo com a escolha do usuário na barra de navegação. Essas páginas são alimentadas pela API que criei para esse projeto. Para o controle dessas rotas, utilizo o `react-router-dom`.
 
-### Analyzing the Bundle Size
+Adicionei também O **Hotjar** na página, que é uma ferramenta utilizada para criar registros do comportamento do visitante no seu site. Tendo o conhecimento desses dados, a empresa pode encontrar melhores oportunidades de interação no site.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+**O Google Optimize, Hotjar e Google Analytics foram integrados na página por meio do assistente de Tags do Google: Google Tag Manager**.
 
-### Making a Progressive Web App
+Extensões utilizadas que auxiliam no desenvolvimento:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- Google Optimize: para avaliar se a página está integrada ao Google Optimize
+- Tag Assistant: para verificar se a Tag está integrada de forma correta na página
 
-### Advanced Configuration
+Para visualização da performance do site é utilizado o [Lighthouse](https://developers.google.com/web/tools/lighthouse?hl=pt-br)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+#### :gear: Tecnologias utilizadas
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. [React](https://pt-br.reactjs.org/): Utilizado React para criação da interface da aplicação web.
+1. [Google Analytics](https://analytics.google.com): Com ele é possível monitorar o perfil de quem acessa seu site, páginas mais acessadas, conversões, dispositivos, cidades e outros dados.
+2. [Google Optimize](https://optimize.google.com): Ferramenta de otimização gratuita que ajuda a testar se alterações no seu site podem melhorar o seu desempenho de vendas.
+3. [SCSS](https://sass-lang.com/): Pré-processador de CSS utilizado para estilização de todo o projeto.
+6. [react-router-dom](https://reactrouter.com/web/api/): Para gereciamento de rotas na aplicação.
+7. [RTL](https://testing-library.com/docs/react-testing-library/intro/): Para criação de testes unitários na aplicação
+8. [Hotjar](https://hotjar.com): Utilizado para criar registros do comportamento do visitante no seu site.
