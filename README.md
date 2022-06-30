@@ -43,6 +43,9 @@ Extra:
 `npm run build`
 > Compila o código em desenvolvimento para ser servido na pasta public
 
+`npm install`
+> Após ser feito o clone, para instalação correta de todas as dependências
+
 #### 📓 Soluções adotadas e informações
 
 Utilizei **React** para o desenvolvimento da aplicação web.
