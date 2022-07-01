@@ -6,7 +6,7 @@ Projeto desenvolvido para processo seletivo na [RD Station](https://rdstation.co
 
 ## :bookmark_tabs: Sobre o projeto:
 
-Criação de um frontend em que irá se comunicar com a API também elaborada por mim, para apresentar informações sobre lançamentos. E para finalizar, deve-se criar um teste A/B simples (pode ser uma mudança de cor na página ou na variante A aparecer uma imagem e na variante B não aparecer) com a ferramenta Google Optimize (ou na que você se sentir mais confortável).
+Criação de um frontend que irá se comunicar com a API também elaborada por mim, para apresentar informações sobre lançamentos. E para finalizar, deve-se criar um teste A/B simples (pode ser uma mudança de cor na página ou na variante A aparecer uma imagem e na variante B não aparecer) com a ferramenta Google Optimize (ou na que você se sentir mais confortável).
 
 ![Homepage](assets/homepage.png)
 
